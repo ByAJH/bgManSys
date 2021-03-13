@@ -22,8 +22,11 @@
           autocomplete="off"
         ></el-input>
       </el-form-item>
-      <el-form-item style="margin-left: 180px">
-        <el-button type="primary" @click="submitForm('ruleForm')"
+      <el-form-item style="margin-left: 0px; color: white; width: 100%">
+        <el-button
+          type="primary"
+          @click="submitForm('ruleForm')"
+          style="width: 100%"
           >登录</el-button
         >
       </el-form-item>
@@ -76,6 +79,8 @@ export default {
   width: 100vw;
   height: 100vh;
   background-color: rgb(241, 241, 241);
+  background-image: url("~@/assets/img/loginbgi.jpg");
+  background-size: 100% 100%;
 }
 h2 {
   /* position: absolute;
@@ -88,8 +93,10 @@ h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-65%, -60%);
-  width: 400px;
+  transform: translate(-60%, -60%);
+  width: 450px;
+  padding-right: 80px;
+  background-color: rgba(207, 207, 207, 0.5);
 }
 .el-form-item__content {
   margin-left: 200px;
